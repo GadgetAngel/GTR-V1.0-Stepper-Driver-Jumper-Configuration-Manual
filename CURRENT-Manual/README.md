@@ -1,4 +1,5 @@
-# GTR-V1.0-Stepper-Driver-Jumper-Configuration-Manual
+te Stepper Motor Drivers Which Have
+    RST&SLP Set...................................................................................# GTR-V1.0-Stepper-Driver-Jumper-Configuration-Manual
 
 :exclamation: This project provides and Interactive PDF (documentation) on how to configure stepper motor 
 driver boards and how to use them with the GTR V1.0 (3D printer controller) board.  This manual also 
@@ -8,8 +9,8 @@ PT100 sensor via Analog ADC I/O Input (PT100 Amplifier),
 PT100 sensor via Software SPI (Adafruit MAX31865 Amplifier), 
 PT100 sensor via Hardware SPI (Adafruit MAX31865 Amplifier),
 K-Type Thermocouple via Analog ADC I/O Input (Adafruit AD8495 Amplifier), 
-K-Type Thermocouple via Software SPI (Adafruit MAX31855 Amplifier),
-K-Type Thermocouple via Hardware SPI (Adafruit MAX31855 Amplifier) and
+K-Type Thermocouple via Software SPI (MAX31855 Amplifier),
+K-Type Thermocouple via Hardware SPI (MAX31855 Amplifier) and
 Link to TWhite101 Instructable on how to add an EEPROM :exclamation:
 ```
 I use Git for Windows with VScode to manage this repository.  I also use Git LFS extensions
@@ -27,7 +28,7 @@ Press Enter to create your local clone.
 Now open Window explorer to the location of local clone.
 ```
 ## The Whole Repository in .zip file is located on Google Drive at: 
-https://drive.google.com/file/d/1Jp0IH1UxIXZurMlG_9Vx8BSUlmtwrbY3/view?usp=sharing 
+## https://drive.google.com/file/d/1NZVN5l0hvm03jaHTAbqvZojUuwjKx4eE/view?usp=sharing 
 
 ## Table of Contents:
 
@@ -58,8 +59,7 @@ DRV8825.........................................................................
   Driver Chip Chart for DRV8825..................................................................................28
   GTR V1.0 LEGEND of Driver Chip Chart for Binary State Stepper Drivers Which Have RST&SLP PINS Set..............29
     Special Consideration of “D” Jumper (RST&SLP) for GTR V1.0 Board.............................................30
-  GTR V1.0 LEGEND of Driver Socket Representation for Binary State Stepper Motor Drivers Which Have
-    RST&SLP Set..................................................................................................32
+  GTR V1.0 LEGEND of Driver Socket Representation for Binary Sta...............32
   The (latest release of) Marlin Setup for DRV8825 Drivers.......................................................38
 BIQU LV8729......................................................................................................41
   Driver Chip Chart for BIQU LV8729..............................................................................41
@@ -357,238 +357,238 @@ APPENDIX F......................................................................
     Miscellaneous Information...................................................................................655
     Miscellaneous Information (continued).......................................................................656
     Facebook Groups.............................................................................................661
-APPENDIX G......................................................................................................662
-  BIGTREETECH Reference Material for GTR V1.0 Board.............................................................662
-    GTR V1.0 Original PIN Diagram...............................................................................662
-    GTR V1.0 Original PIN Diagram - Corrected...................................................................663
-    GTR V1.0 Original Wiring Diagram 1..........................................................................664
-    GTR V1.0 Original PIN 1 Diagram.............................................................................665
-    GTR V1.0 Original Schematic Diagram.........................................................................666
-APPENDIX H......................................................................................................667
-  BIGTREETECH’s Smart Filament Sensor (SFS) Guide for GTR V1.0 Board............................................667
-  Information About BIGTREETECH’s SFS...........................................................................669
-  SFS Wired to Extend-Interface-1 Connector.....................................................................671
-    Marlin 2.0.x Setup for SFS Connected to Extend-Interface-1 Connector........................................672
-  SFS Wired to E2 Limit Switch..................................................................................675
-    Marlin 2.0.x Setup for SFS Connected to E2 Connector........................................................676
-APPENDIX I......................................................................................................686
-  “Connecting up Raspberry Pi via TFT Connector” Guide for GTR V1.0 Board.......................................686
-  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via TFT Connector..................................687
-    TFT Connector Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable.................690
-  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................693
-APPENDIX J......................................................................................................696
-  “Connecting up Raspberry Pi via Raspberry Pi Header” Guide for GTR V1.0 Board.................................696
-  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via Raspberry Pi Connector.........................697
-    Pi Connector Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable..................700
-  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................703
-APPENDIX K......................................................................................................706
-  “Connecting up Raspberry Pi via WIFI Header” Guide for GTR V1.0 Board.........................................706
-  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via WIFI Header....................................707
-    WIFI Header Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable...................710
-  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................713
-APPENDIX L......................................................................................................716
-  BLTouch Guide for GTR V1.0 Board..............................................................................716
-  Connecting GTR V1.0 with BLTouch..............................................................................717
-    Wiring Diagram for Connecting GTR V1.0 with BLTouch.........................................................720
-  Marlin 2.0.x Firmware Setup for Connecting a BLTouch to GTR V1.0 Board........................................721
-    Explanation when to use Marlin variable Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN..................................726
-    Understanding Marlin Firmware’s NOZZLE_TO_PROBE_OFFSET Setting..............................................730
-APPENDIX M......................................................................................................745
-  PT100 Sensor Connection Guide to the GTR V1.0 Board via Analog ADC I/O Input..................................745
-  Hyperlink Map for this PT100 Sensor Connection Guide via Analog ADC I/O Input.................................746
-  Connecting  GTR V1.0 with  PT100 Sensor.......................................................................747
-  E3D PT100 Amplifier Board Specifications......................................................................747
-    E3D’s PT100 Amplifier Board -- Schematic Diagram............................................................748
-    Hyperlink to Texas Instruments’ INA826  Amplifier Data Sheet................................................748
-  Analog Procedure..............................................................................................751
-    Connecting GTR V1.0 Board with PT100 Amplifier Board and PT100 Sensor.......................................751
-      Locations of 3.3VDC Referenced to Analog Ground for the GTR V1.0 Board’s Thermistor Ports.................762
-      Hardware Hack Instructions for the GTR V1.0 Board’s T0 (E0) Thermistor Port...............................764
-      Hardware Hack Instructions for the GTR V1.0 Board’s T1 (E1) Thermistor Port...............................766
-      Hardware Hack Instructions for the GTR V1.0 Board’s T2 (E2) Thermistor Port...............................768
-    Instructions for Supplying Power to the PT100 Amplifier Board...............................................771
+APPENDIX G......................................................................................................663
+  BIGTREETECH Reference Material for GTR V1.0 Board.............................................................663
+    GTR V1.0 Original PIN Diagram...............................................................................663
+    GTR V1.0 Original PIN Diagram - Corrected...................................................................664
+    GTR V1.0 Original Wiring Diagram 1..........................................................................665
+    GTR V1.0 Original PIN 1 Diagram.............................................................................666
+    GTR V1.0 Original Schematic Diagram.........................................................................667
+APPENDIX H......................................................................................................668
+  BIGTREETECH’s Smart Filament Sensor (SFS) Guide for GTR V1.0 Board............................................668
+  Information About BIGTREETECH’s SFS...........................................................................670
+  SFS Wired to Extend-Interface-1 Connector.....................................................................672
+    Marlin 2.0.x Setup for SFS Connected to Extend-Interface-1 Connector........................................673
+  SFS Wired to E2 Limit Switch..................................................................................676
+    Marlin 2.0.x Setup for SFS Connected to E2 Connector........................................................677
+APPENDIX I......................................................................................................687
+  “Connecting up Raspberry Pi via TFT Connector” Guide for GTR V1.0 Board.......................................687
+  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via TFT Connector..................................688
+    TFT Connector Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable.................691
+  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................694
+APPENDIX J......................................................................................................697
+  “Connecting up Raspberry Pi via Raspberry Pi Header” Guide for GTR V1.0 Board.................................697
+  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via Raspberry Pi Connector.........................698
+    Pi Connector Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable..................701
+  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................704
+APPENDIX K......................................................................................................707
+  “Connecting up Raspberry Pi via WIFI Header” Guide for GTR V1.0 Board.........................................707
+  Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable Via WIFI Header....................................708
+    WIFI Header Wiring Diagram for Connecting GTR V1.0 to Raspberry Pi to Eliminate USB Cable...................711
+  Marlin 2.0.x Setup for Connecting up Raspberry Pi.............................................................714
+APPENDIX L......................................................................................................717
+  BLTouch Guide for GTR V1.0 Board..............................................................................717
+  Connecting GTR V1.0 with BLTouch..............................................................................718
+    Wiring Diagram for Connecting GTR V1.0 with BLTouch.........................................................721
+  Marlin 2.0.x Firmware Setup for Connecting a BLTouch to GTR V1.0 Board........................................722
+    Explanation when to use Marlin variable Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN..................................727
+    Understanding Marlin Firmware’s NOZZLE_TO_PROBE_OFFSET Setting..............................................731
+APPENDIX M......................................................................................................746
+  PT100 Sensor Connection Guide to the GTR V1.0 Board via Analog ADC I/O Input..................................746
+  Hyperlink Map for this PT100 Sensor Connection Guide via Analog ADC I/O Input.................................747
+  Connecting  GTR V1.0 with  PT100 Sensor.......................................................................748
+  E3D PT100 Amplifier Board Specifications......................................................................748
+    E3D’s PT100 Amplifier Board -- Schematic Diagram............................................................749
+    Hyperlink to Texas Instruments’ INA826  Amplifier Data Sheet................................................749
+  Analog Procedure..............................................................................................752
+    Connecting GTR V1.0 Board with PT100 Amplifier Board and PT100 Sensor.......................................752
+      Locations of 3.3VDC Referenced to Analog Ground for the GTR V1.0 Board’s Thermistor Ports.................763
+      Hardware Hack Instructions for the GTR V1.0 Board’s T0 (E0) Thermistor Port...............................765
+      Hardware Hack Instructions for the GTR V1.0 Board’s T1 (E1) Thermistor Port...............................767
+      Hardware Hack Instructions for the GTR V1.0 Board’s T2 (E2) Thermistor Port...............................769
+    Instructions for Supplying Power to the PT100 Amplifier Board...............................................772
       Method #1 (5 VDC Digital PWR) for Powering the PT100 Amplifier Board for Techniques #1,  
-        Technique #2, and Technique #8..........................................................................772
+        Technique #2, and Technique #8..........................................................................773
       Method #1 (3.3 VDC Digital PWR) for Powering the PT100 Amplifier Board for Techniques #3,
-        and Technique #4........................................................................................773
+        and Technique #4........................................................................................774
       Method #1 (5 VDC Digital PWR) for Powering the PT100 Amplifier Board for Techniques #9,  
-        Technique #10, and Technique #11........................................................................774
+        Technique #10, and Technique #11........................................................................775
       Method #1 (3.3 VDC Digital PWR) for Powering the PT100 Amplifier Board for Techniques #5,  
-        Technique #6, and Technique #7..........................................................................775
-      Method #2 (3.3 VDC ref GNDAO, Analog PWR) for Powering PT100 Amplifier Board for Technique #5, 
         Technique #6, and Technique #7..........................................................................776
-    Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR).............................................777
-    Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR).............................................778
-    Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR)...........................................779
-    Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)R).........................................780
-    Wiring Diagram for Technique #5 & Method #1 (3.3 VDC Digital PWR)...........................................781
-    Wiring Diagram for Technique #5 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................782
-    Wiring Diagram for Technique #6 & Method #1 (3.3 VDC Digital PWR)...........................................783
-    Wiring Diagram for Technique #6 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................784
-    Wiring Diagram for Technique #7 & Method #1 (3.3 VDC Digital PWR)...........................................785
-    Wiring Diagram for Technique #7 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................786
+      Method #2 (3.3 VDC ref GNDAO, Analog PWR) for Powering PT100 Amplifier Board for Technique #5, 
+        Technique #6, and Technique #7..........................................................................777
+    Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR).............................................778
+    Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR).............................................779
+    Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR)...........................................780
+    Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)R).........................................781
+    Wiring Diagram for Technique #5 & Method #1 (3.3 VDC Digital PWR)...........................................782
+    Wiring Diagram for Technique #5 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................783
+    Wiring Diagram for Technique #6 & Method #1 (3.3 VDC Digital PWR)...........................................784
+    Wiring Diagram for Technique #6 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................785
+    Wiring Diagram for Technique #7 & Method #1 (3.3 VDC Digital PWR)...........................................786
+    Wiring Diagram for Technique #7 & Method #2 (3.3 VDC ref GNDAO, Analog PWR).................................787
     Wiring Diagram for Technique #8 & Method #1 (5 VDC Digital PWR).............................................787
-    Wiring Diagram for Technique #9 & Method #1 (5 VDC Digital PWR).............................................788
-    Wiring Diagram for Technique #10 & Method #1 (5 VDC Digital PWR)............................................789
-    Wiring Diagram for Technique #11 & Method #1 (5 VDC Digital PWR)............................................790
-      Marlin 2.0.x Firmware Setup for Connecting a PT100 Sensor to the GTR V1.0 Board...........................791
-      Marlin 2.0.x Firmware Setup for Technique #1..............................................................792
-      Marlin 2.0.x Firmware Setup for Technique #2..............................................................799
-      Marlin 2.0.x Firmware Setup for Technique #3..............................................................806
-      Marlin 2.0.x Firmware Setup for Technique #4..............................................................813
-      Marlin 2.0.x Firmware Setup for Technique #5..............................................................820
-      Marlin 2.0.x Firmware Setup for Technique #6..............................................................827
-      Marlin 2.0.x Firmware Setup for Technique #7..............................................................834
-      Marlin 2.0.x Firmware Setup for Technique #8..............................................................841
-      Marlin 2.0.x Firmware Setup for Technique #9..............................................................853
-      Marlin 2.0.x Firmware Setup for Technique #10.............................................................860
-      Marlin 2.0.x Firmware Setup for Technique #11.............................................................867
-APPENDIX N......................................................................................................874
-  PT100 Sensor Connection Guide to the GTR V1.0 Board via Software SPI Protocol.................................874
-  Hyperlink Map for this PT100 Sensor Connection Guide via Software SPI Protocol................................875
-  Digital Procedure.............................................................................................876
-    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board and PT100 Sensor................................876
-    Adafruit MAX31865 Amplifier Board Specification.............................................................877
-      Adafruit MAX31865 Amplifier Board -- Schematic Diagram....................................................878
-      Hyperlink to MAXIM Integrated’s MAX31865 Data Sheet.......................................................878
-    Connecting GTR V1.0 with Adafruit MAX31865 Amplifier Board via Software SPI.................................880
+    Wiring Diagram for Technique #9 & Method #1 (5 VDC Digital PWR).............................................789
+    Wiring Diagram for Technique #10 & Method #1 (5 VDC Digital PWR)............................................790
+    Wiring Diagram for Technique #11 & Method #1 (5 VDC Digital PWR)............................................791
+      Marlin 2.0.x Firmware Setup for Connecting a PT100 Sensor to the GTR V1.0 Board...........................792
+      Marlin 2.0.x Firmware Setup for Technique #1..............................................................793
+      Marlin 2.0.x Firmware Setup for Technique #2..............................................................800
+      Marlin 2.0.x Firmware Setup for Technique #3..............................................................807
+      Marlin 2.0.x Firmware Setup for Technique #4..............................................................814
+      Marlin 2.0.x Firmware Setup for Technique #5..............................................................821
+      Marlin 2.0.x Firmware Setup for Technique #6..............................................................828
+      Marlin 2.0.x Firmware Setup for Technique #7..............................................................835
+      Marlin 2.0.x Firmware Setup for Technique #8..............................................................842
+      Marlin 2.0.x Firmware Setup for Technique #9..............................................................854
+      Marlin 2.0.x Firmware Setup for Technique #10.............................................................861
+      Marlin 2.0.x Firmware Setup for Technique #11.............................................................868
+APPENDIX N......................................................................................................875
+  PT100 Sensor Connection Guide to the GTR V1.0 Board via Software SPI Protocol.................................875
+  Hyperlink Map for this PT100 Sensor Connection Guide via Software SPI Protocol................................876
+  Digital Procedure.............................................................................................877
+    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board and PT100 Sensor................................877
+    Adafruit MAX31865 Amplifier Board Specification.............................................................878
+      Adafruit MAX31865 Amplifier Board -- Schematic Diagram....................................................879
+      Hyperlink to MAXIM Integrated’s MAX31865 Data Sheet.......................................................879
+    Connecting GTR V1.0 with Adafruit MAX31865 Amplifier Board via Software SPI.................................881
       Method #1 (5 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for Technique #1 
-        and Technique #2........................................................................................889
+        and Technique #2........................................................................................890
       Method #1 (3.3 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for Technique #3 
-        and Technique #4........................................................................................890
-      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)...........................................891
-      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)...........................................892
-      Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR).........................................893
-      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR).........................................894
-      Marlin 2.0.x Firmware Setup for Technique #1..............................................................896
-      Marlin 2.0.x Firmware Setup for Technique #2..............................................................909
-      Marlin 2.0.x Firmware Setup for Technique #3..............................................................922
-      Marlin 2.0.x Firmware Setup for Technique #4..............................................................935
-APPENDIX O......................................................................................................948
-  PT100 Sensor Connection Guide to the GTR V1.0 Board via Hardware SPI Protocol.................................948
-  Hyperlink Map for this PT100 Sensor Connection Guide via Hardware SPI Protocol................................949
-  Digital Procedure.............................................................................................950
-    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board and PT100 Sensor................................950
-    Adafruit MAX31865 Amplifier Board Specification.............................................................951
-      Adafruit MAX31865 Amplifier Board -- Schematic Diagram....................................................952
-      Hyperlink to MAXIM Integrated’s MAX31865 Data Sheet.......................................................952
-    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board via Hardware SPI................................954
+        and Technique #4........................................................................................891
+      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)...........................................892
+      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)...........................................893
+      Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR).........................................894
+      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR).........................................895
+      Marlin 2.0.x Firmware Setup for Technique #1..............................................................897
+      Marlin 2.0.x Firmware Setup for Technique #2..............................................................910
+      Marlin 2.0.x Firmware Setup for Technique #3..............................................................923
+      Marlin 2.0.x Firmware Setup for Technique #4..............................................................936
+APPENDIX O......................................................................................................949
+  PT100 Sensor Connection Guide to the GTR V1.0 Board via Hardware SPI Protocol.................................949
+  Hyperlink Map for this PT100 Sensor Connection Guide via Hardware SPI Protocol................................950
+  Digital Procedure.............................................................................................951
+    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board and PT100 Sensor................................951
+    Adafruit MAX31865 Amplifier Board Specification.............................................................952
+      Adafruit MAX31865 Amplifier Board -- Schematic Diagram....................................................953
+      Hyperlink to MAXIM Integrated’s MAX31865 Data Sheet.......................................................953
+    Connecting  GTR V1.0 with Adafruit MAX31865 Amplifier Board via Hardware SPI................................953
       Method #1 (5 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for Technique #1 
-        and Technique #2........................................................................................964
+        and Technique #2........................................................................................965
       Method #1 (3.3 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for Technique #3 
-        and Technique #4........................................................................................965
-      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)...........................................966
-      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)...........................................967
-      Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR).........................................968
-      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR).........................................969
-      Marlin 2.0.x Firmware Setup for Technique #1..............................................................971
-      Marlin 2.0.x Firmware Setup for Technique #2..............................................................984
-      Marlin 2.0.x Firmware Setup for Technique #3..............................................................997
-      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1010
-APPENDIX P.....................................................................................................1023
-  1st & 2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Analog ADC I/O Input.........1023
-  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Analog ADC I/O Input..................1024
-  Connecting  GTR V1.0 with K-Type Thermocouple Sensor.........................................................1025
-  Adafruit AD8495 Amplifier Board Specifications...............................................................1025
-    Adafruit’s AD8495 Amplifier Board -- Schematic Diagram.....................................................1026
-    Hyperlink to Analog Devices’ AD8495 Amplifier Data Sheet...................................................1026
-    How To Prevent a Noisy K-Type Thermocouple.................................................................1027
-  Connecting GTR V1.0 with One (1) or Two (2) K-Type Thermocouple Sensor.......................................1029
-    Hook Up One (1) K-Type thermocouple to the GTR V1.0 board: #1, #2, and #3..................................1030
-    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #4, and #5......................................1030
-    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #5 (continued), and #6..........................1031
-    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #6 (continued), #7, and #8......................1032
+        and Technique #4........................................................................................966
+      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)...........................................967
+      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)...........................................968
+      Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR).........................................969
+      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR).........................................970
+      Marlin 2.0.x Firmware Setup for Technique #1..............................................................972
+      Marlin 2.0.x Firmware Setup for Technique #2..............................................................985
+      Marlin 2.0.x Firmware Setup for Technique #3..............................................................998
+      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1011
+APPENDIX P.....................................................................................................1024
+  1st & 2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Analog ADC I/O Input.........1024
+  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Analog ADC I/O Input..................1025
+  Connecting  GTR V1.0 with K-Type Thermocouple Sensor.........................................................1026
+  Adafruit AD8495 Amplifier Board Specifications...............................................................1026
+    Adafruit’s AD8495 Amplifier Board -- Schematic Diagram.....................................................1027
+    Hyperlink to Analog Devices’ AD8495 Amplifier Data Sheet...................................................1027
+    How To Prevent a Noisy K-Type Thermocouple.................................................................1028
+  Connecting GTR V1.0 with One (1) or Two (2) K-Type Thermocouple Sensor.......................................1030
+    Hook Up One (1) K-Type thermocouple to the GTR V1.0 board: #1, #2, and #3..................................1031
+    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #4, and #5......................................1031
+    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #5 (continued), and #6..........................1032
+    Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #6 (continued), #7, and #8......................1033
     Hook Up Two (2) K-Type thermocouple to the GTR V1.0 board: #8 (continued)..................................1033
-  Analog Procedure.............................................................................................1036
-    Connecting GTR V1.0 with K-Type Thermocouple Sensor and Adafruit’s AD8495 Amplifier Board..................1036
-      Locations of 3.3VDC Referenced to Analog Ground for the GTR V1.0 Board’s Thermistor Ports................1047
-      Hardware Hack Instructions for the GTR V1.0 Board’s T0 (E0) Thermistor Port..............................1049
-      Hardware Hack Instructions for the GTR V1.0 Board’s T1 (E1) Thermistor Port..............................1051
-      Hardware Hack Instructions for the GTR V1.0 Board’s T2 (E2) Thermistor Port..............................1053
-    Instructions for Supplying Power to the AD8495 Amplifier Board.............................................1056
+  Analog Procedure.............................................................................................1037
+    Connecting GTR V1.0 with K-Type Thermocouple Sensor and Adafruit’s AD8495 Amplifier Board..................1037
+      Locations of 3.3VDC Referenced to Analog Ground for the GTR V1.0 Board’s Thermistor Ports................1048
+      Hardware Hack Instructions for the GTR V1.0 Board’s T0 (E0) Thermistor Port..............................1050
+      Hardware Hack Instructions for the GTR V1.0 Board’s T1 (E1) Thermistor Port..............................1052
+      Hardware Hack Instructions for the GTR V1.0 Board’s T2 (E2) Thermistor Port..............................1054
+    Instructions for Supplying Power to the AD8495 Amplifier Board.............................................1057
       Method #1 (5 VDC Digital PWR) for Powering the AD8495 Amplifier Board for Techniques #1,  
-        Technique #2, and Technique #8.........................................................................1057
+        Technique #2, and Technique #8.........................................................................1058
       Method #1 (3.3 VDC Digital PWR) for Powering the AD8495 Amplifier Board for Techniques #3,  
-        and Technique #4.......................................................................................1058
+        and Technique #4.......................................................................................1059
       Method #1 (5 VDC Digital PWR) for Powering the AD8495 Amplifier Board for Techniques #9,  
-        Technique #10, and Technique #11.......................................................................1059
+        Technique #10, and Technique #11.......................................................................1060
       Method #1 (3.3 VDC Digital PWR) for Powering the AD8495 Amplifier Board for Techniques #5,  
-        Technique #6, and Technique #7.........................................................................1060
-      Method #2 (3.3 VDC ref GNDAO, Analog PWR) for Powering AD8495 Amplifier Board for Technique #5, 
         Technique #6, and Technique #7.........................................................................1061
-    Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)............................................1062
-    Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)............................................1063
-    Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR)..........................................1064
-    Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)R)........................................1065
-    Wiring Diagram for Technique #5 & Method #1 (3.3 VDC Digital PWR)..........................................1066
-    Wiring Diagram for Technique #5 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1067
-    Wiring Diagram for Technique #6 & Method #1 (3.3 VDC Digital PWR)..........................................1068
-    Wiring Diagram for Technique #6 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1069
-    Wiring Diagram for Technique #7 & Method #1 (3.3 VDC Digital PWR)..........................................1070
-    Wiring Diagram for Technique #7 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1071
-    Wiring Diagram for Technique #8 & Method #1 (3.3 VDC Digital PWR)..........................................1072
-    Wiring Diagram for Technique #9 & Method #1 (5 VDC Digital PWR)............................................1073
-    Wiring Diagram for Technique #10 & Method #1 (5 VDC Digital PWR)...........................................1074
-    Wiring Diagram for Technique #11 & Method #1 (5 VDC Digital PWR)...........................................1075
-    Marlin 2.0.x Firmware Setup for Connecting a K-Type Thermocouple Sensor to the GTR V1.0 Board..............1076
-      Marlin 2.0.x Firmware Setup for Technique #1.............................................................1077
-      Marlin 2.0.x Firmware Setup for Technique #2.............................................................1085
-      Marlin 2.0.x Firmware Setup for Technique #3.............................................................1093
-      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1101
-      Marlin 2.0.x Firmware Setup for Technique #5.............................................................1109
-      Marlin 2.0.x Firmware Setup for Technique #6.............................................................1117
-      Marlin 2.0.x Firmware Setup for Technique #7.............................................................1125
-      Marlin 2.0.x Firmware Setup for Technique #8.............................................................1133
-      Marlin 2.0.x Firmware Setup for Technique #9.............................................................1148
-      Marlin 2.0.x Firmware Setup for Technique #10............................................................1156
-      Marlin 2.0.x Firmware Setup for Technique #11............................................................1164
-APPENDIX Q.....................................................................................................1172
-  1st & 2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Software SPI Protocol........1172
-  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Software SPI Protocol.................1173
-  Digital Procedure............................................................................................1174
-    Connecting GTR V1.0 with 1st & 2nd Adafruit MAX31855 Amplifier Board and K-Type Thermocouple Sensor........1174
-    MAX31855 Amplifier Board Specification.....................................................................1175
-      Adafruit’s MAX31855 Amplifier Board -- Schematic Diagram.................................................1176
-      Hyperlink to MAXIM’s MAX31855 Data Sheet.................................................................1176
-      How To Prevent a Noisy K-Type Thermocouple...............................................................1177
-    Using the Embedded MAX31855 Amplifier and a 2nd MAX31855 Amplifier with 2nd Thermocouple Sensor............1179
-      Marlin 2.0.x Firmware Setup for one K-Type Thermocouple connected to KTEM................................1180
-    Connecting GTR V1.0 with 2nd Adafruit MAX31855 Amplifier Board via Software SPI............................1192
-      Method #1 (5 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for 
-        Technique #1 and Technique #2..........................................................................1199
-      Method #1 (3.3 VDC Digital PWR) for Powering the MAX31865 Amplifier Board for 
-        Technique #3 and Technique #4..........................................................................1200
-      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)..........................................1201
-      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)..........................................1202
+      Method #2 (3.3 VDC ref GNDAO, Analog PWR) for Powering AD8495 Amplifier Board for Technique #5, 
+        Technique #6, and Technique #7.........................................................................1062
+    Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)............................................1063
+    Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)............................................1064
+    Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR)..........................................1065
+    Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)R)........................................1066
+    Wiring Diagram for Technique #5 & Method #1 (3.3 VDC Digital PWR)..........................................1067
+    Wiring Diagram for Technique #5 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1068
+    Wiring Diagram for Technique #6 & Method #1 (3.3 VDC Digital PWR)..........................................1069
+    Wiring Diagram for Technique #6 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1070
+    Wiring Diagram for Technique #7 & Method #1 (3.3 VDC Digital PWR)..........................................1071
+    Wiring Diagram for Technique #7 & Method #2 (3.3 VDC ref GNDAO, Analog PWR)................................1072
+    Wiring Diagram for Technique #8 & Method #1 (3.3 VDC Digital PWR)..........................................1073
+    Wiring Diagram for Technique #9 & Method #1 (5 VDC Digital PWR)............................................1074
+    Wiring Diagram for Technique #10 & Method #1 (5 VDC Digital PWR)...........................................1075
+    Wiring Diagram for Technique #11 & Method #1 (5 VDC Digital PWR)...........................................1076
+    Marlin 2.0.x Firmware Setup for Connecting a K-Type Thermocouple Sensor to the GTR V1.0 Board..............1077
+      Marlin 2.0.x Firmware Setup for Technique #1.............................................................1078
+      Marlin 2.0.x Firmware Setup for Technique #2.............................................................1086
+      Marlin 2.0.x Firmware Setup for Technique #3.............................................................1094
+      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1102
+      Marlin 2.0.x Firmware Setup for Technique #5.............................................................1110
+      Marlin 2.0.x Firmware Setup for Technique #6.............................................................1118
+      Marlin 2.0.x Firmware Setup for Technique #7.............................................................1126
+      Marlin 2.0.x Firmware Setup for Technique #8.............................................................1134
+      Marlin 2.0.x Firmware Setup for Technique #9.............................................................1149
+      Marlin 2.0.x Firmware Setup for Technique #10............................................................1157
+      Marlin 2.0.x Firmware Setup for Technique #11............................................................1165
+APPENDIX Q.....................................................................................................1173
+  1st & 2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Software SPI Protocol........1173
+  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Software SPI Protocol.................1174
+  Digital Procedure............................................................................................1175
+    Connecting GTR V1.0 with 1st & 2nd Adafruit MAX31855 Amplifier Board and K-Type Thermocouple Sensor........1175
+    MAX31855 Amplifier Board Specification.....................................................................1176
+      Adafruit’s MAX31855 Amplifier Board -- Schematic Diagram.................................................1177
+      Hyperlink to MAXIM’s MAX31855 Data Sheet.................................................................1177
+      How To Prevent a Noisy K-Type Thermocouple...............................................................1178
+    Using the Embedded MAX31855 Amplifier and a 2nd MAX31855 Amplifier with 2nd Thermocouple Sensor............1180
+      Marlin 2.0.x Firmware Setup for one K-Type Thermocouple connected to KTEM................................1181
+    Connecting GTR V1.0 with 2nd Adafruit MAX31855 Amplifier Board via Software SPI............................1193
+      Method #1 (5 VDC Digital PWR) for Powering the MAX31855 Amplifier Board for 
+        Technique #1 and Technique #2..........................................................................1200
+      Method #1 (3.3 VDC Digital PWR) for Powering the MAX31855 Amplifier Board for 
+        Technique #3 and Technique #4..........................................................................1201
+      Wiring Diagram for Technique #1 & Method #1 (5 VDC Digital PWR)..........................................1202
+      Wiring Diagram for Technique #2 & Method #1 (5 VDC Digital PWR)..........................................1203
       Wiring Diagram for Technique #3 & Method #1 (3.3 VDC Digital PWR)........................................1203
-      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)........................................1204
-      Marlin 2.0.x Firmware Setup for Technique #1.............................................................1206
-      Marlin 2.0.x Firmware Setup for Technique #2.............................................................1219
-      Marlin 2.0.x Firmware Setup for Technique #3.............................................................1232
-      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1245
-APPENDIX R.....................................................................................................1258
-  2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Hardware SPI Protocol..............1258
-  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Hardware SPI Protocol.................1259
-  Digital Procedure............................................................................................1260
-    Connecting GTR V1.0 with MAX31855 Amplifier Board and 2nd K-Type Thermocouple Sensor.......................1260
-    MAX31855 Amplifier Board Specification.....................................................................1261
-      Adafruit’s MAX31855 Amplifier Board -- Schematic Diagram.................................................1262
-      Hyperlink to MAXIM’s MAX31855 Data Sheet.................................................................1262
-      How To Prevent a Noisy K-Type Thermocouple...............................................................1263
-    Connecting GTR V1.0 with 2nd Adafruit MAX31855 Amplifier Board via Software SPI ONLY.......................1265
-APPENDIX S.....................................................................................................1266
-  EEPROM Guide for GTR V1.0 Board..............................................................................1266
-    Link to TWhite101 Instructable Guide called “BigTreeTech SKR Pro V1.1 or V1.2; Adding a EEPROM”............1267
+      Wiring Diagram for Technique #4 & Method #1 (3.3 VDC Digital PWR)........................................1205
+      Marlin 2.0.x Firmware Setup for Technique #1.............................................................1207
+      Marlin 2.0.x Firmware Setup for Technique #2.............................................................1220
+      Marlin 2.0.x Firmware Setup for Technique #3.............................................................1233
+      Marlin 2.0.x Firmware Setup for Technique #4.............................................................1246
+APPENDIX R.....................................................................................................1259
+  2nd K-Type Thermocouple Sensor Connection Guide to the GTR V1.0 Board via Hardware SPI Protocol..............1259
+  Hyperlink Map for this K-Type Thermocouple Sensor Connection Guide via Hardware SPI Protocol.................1260
+  Digital Procedure............................................................................................1261
+    Connecting GTR V1.0 with MAX31855 Amplifier Board and 2nd K-Type Thermocouple Sensor.......................1261
+    MAX31855 Amplifier Board Specification.....................................................................1262
+      Adafruit’s MAX31855 Amplifier Board -- Schematic Diagram.................................................1263
+      Hyperlink to MAXIM’s MAX31855 Data Sheet.................................................................1263
+      How To Prevent a Noisy K-Type Thermocouple...............................................................1264
+    Connecting GTR V1.0 with 2nd Adafruit MAX31855 Amplifier Board via Software SPI ONLY.......................1266
+APPENDIX S.....................................................................................................1267
+  EEPROM Guide for GTR V1.0 Board..............................................................................1267
+    Link to TWhite101 Instructable Guide called “BigTreeTech SKR Pro V1.1 or V1.2; Adding a EEPROM”............1268
     Link to TWhite101 Instructable Guide called “Correcting the Issue With On-board EEPROM 
-      for the BTT GTR V1.0”....................................................................................1268
-Index..........................................................................................................1269
+      for the BTT GTR V1.0”....................................................................................1269
+Index..........................................................................................................1270
 ```
 ---
 
 ## Web Sites to Help ReCalibrate or Calibrate Your 3D Printer
 
-https://teachingtechyt.github.io/calibration.html?fbclid=IwAR2HwowLZs4jnP0RU1pVZ1TmMxYbvNhqFvoGKGzCXAyCB_HdcZDkemmTJhc#intro
+## https://teachingtechyt.github.io/calibration.html?fbclid=IwAR2HwowLZs4jnP0RU1pVZ1TmMxYbvNhqFvoGKGzCXAyCB_HdcZDkemmTJhc#intro
 
-https://3dpc.nl/
+## https://3dpc.nl/
 
 ---
