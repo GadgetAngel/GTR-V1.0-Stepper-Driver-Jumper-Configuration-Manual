@@ -1,5 +1,4 @@
-te Stepper Motor Drivers Which Have
-    RST&SLP Set...................................................................................# GTR-V1.0-Stepper-Driver-Jumper-Configuration-Manual
+# GTR-V1.0-Stepper-Driver-Jumper-Configuration-Manual
 
 :exclamation: This project provides and Interactive PDF (documentation) on how to configure stepper motor 
 driver boards and how to use them with the GTR V1.0 (3D printer controller) board.  This manual also 
