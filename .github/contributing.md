@@ -57,7 +57,7 @@ Explain the problem and include additional details to help maintainers reproduce
 
 ### Suggesting Features or Changes
 
-This section guides you through submitting a suggestion for SKR-PRO-V1.1-Stepper-Driver-Jumper-Configuration-Manual, including completely new features. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+This section guides you through submitting a suggestion for GTR-V1.0-Stepper-Driver-Jumper-Configuration-Manual, including completely new features. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 When you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-feature-request). Fill in [the template](./ISSUE_TEMPLATE/feature_request.md).
 
